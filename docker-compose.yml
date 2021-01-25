@@ -6,7 +6,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/usr/src/app # ローカルとコンテナ内の同期
-    command: sh -c "cd react-sample && yarn start"
+    command: sh -c "cd new-years-card-winner-number-checker && yarn start"
     ports:
       - "3000:3000"
     stdin_open: true # https://teratail.com/questions/249875
