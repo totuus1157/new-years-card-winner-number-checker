@@ -30,8 +30,21 @@ class App extends React.Component {
         <main>
           <section>
             <form onSubmit={this.doSubmit}>
-              <label htmlFor="input_number">番号の下２桁を入力してください：</label>
-              <input ref={this.inputRef} id="input_number" type="text" onChange={this.doChange} autoFocus maxLength="2" minLength="2" pattern="[0-9]{2}" size="2" required />
+              <label htmlFor="input_number">
+                番号の下２桁を入力してください：
+              </label>
+              <input
+                ref={this.inputRef}
+                id="input_number"
+                type="text"
+                onChange={this.doChange}
+                autoFocus
+                maxLength="2"
+                minLength="2"
+                pattern="[0-9]{2}"
+                size="2"
+                required
+              />
               <input type="submit" value="判定！" />
             </form>
           </section>
