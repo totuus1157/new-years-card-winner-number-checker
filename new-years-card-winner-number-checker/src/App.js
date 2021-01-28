@@ -4,7 +4,7 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { result: '結果'};
+    this.state = {result: '結果'};
     this.inputRef = React.createRef();
     this.doChange = this.doChange.bind(this);
     this.doSubmit = this.doSubmit.bind(this);
@@ -15,7 +15,25 @@ class App extends React.Component {
   }
 
   doSubmit(event) {
-    this.setState({result: this.input});
+    const firstPrize = "757462";
+    const secondPrize = "6335";
+    const thirdPrize = ["60", "58", "50"];
+
+    const inputNumber = this.input;
+
+    if (firstPrize.substring(4) === inputNumber) {
+      this.setState({result: `１等かも！？（当選番号は ${firstPrize} です）`});
+    } else if (secondPrize.substring(2) === inputNumber) {
+      this.setState({result: `２等かも！？（当選番号は ${secondPrize} です）`});
+    } else if (thirdPrize[0] === inputNumber
+               || thirdPrize[1] === inputNumber
+               || thirdPrize[2] === inputNumber)
+    {
+      this.setState({result: "３等が当たりました！"});
+    } else {
+      this.setState({result: `${inputNumber}は外れです・・・`});
+    }
+
     event.preventDefault();
     this.inputRef.current.value = "";
   }
