@@ -40,8 +40,8 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="">
-        <header className="">
+      <div className="App">
+        <header>
           <h1>年賀状当選番号チェッカー</h1>
           <h2>【２０２１年版】</h2>
         </header>
