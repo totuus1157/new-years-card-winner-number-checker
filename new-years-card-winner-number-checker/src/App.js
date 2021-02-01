@@ -49,7 +49,7 @@ class App extends React.Component {
           </header>
         </Jumbotron>
         <main>
-          <section>
+          <section className="mb-4">
             <form onSubmit={this.doSubmit}>
               <label htmlFor="input_number">
                 番号の下２桁を入力してください：
