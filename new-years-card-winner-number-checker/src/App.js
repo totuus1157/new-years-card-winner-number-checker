@@ -1,4 +1,5 @@
 import React from 'react';
+import Jumbotron from 'react-bootstrap/Jumbotron'
 import './App.css';
 
 class App extends React.Component {
@@ -41,10 +42,12 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <h1>年賀状当選番号<br className="d-block d-md-none" />チェッカー</h1>
-          <h2>【２０２１年版】</h2>
-        </header>
+        <Jumbotron>
+          <header>
+            <h1>年賀状当選番号<br className="d-block d-md-none" />チェッカー</h1>
+            <h2>【２０２１年版】</h2>
+          </header>
+        </Jumbotron>
         <main>
           <section>
             <form onSubmit={this.doSubmit}>
