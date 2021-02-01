@@ -5,7 +5,7 @@ import './App.css';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {result: '結果'};
+    this.state = {result: ''};
     this.inputRef = React.createRef();
     this.doChange = this.doChange.bind(this);
     this.doSubmit = this.doSubmit.bind(this);
