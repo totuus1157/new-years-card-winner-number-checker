@@ -32,7 +32,7 @@ class App extends React.Component {
     {
       this.setState({result: "３等が当たりました！"});
     } else {
-      this.setState({result: `${inputNumber}は外れです・・・`});
+      this.setState({result: `${inputNumber}はハズレです・・・`});
     }
 
     event.preventDefault();
