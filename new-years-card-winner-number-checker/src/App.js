@@ -42,7 +42,7 @@ class App extends React.Component {
     return (
       <div className="App">
         <header>
-          <h1>年賀状当選番号チェッカー</h1>
+          <h1>年賀状当選番号<br className="d-block d-md-none" />チェッカー</h1>
           <h2>【２０２１年版】</h2>
         </header>
         <main>
