@@ -30,7 +30,7 @@ class App extends React.Component {
                || thirdPrize[1] === inputNumber
                || thirdPrize[2] === inputNumber)
     {
-      this.setState({result: "３等が当たりました！"});
+      this.setState({result: `３等が当たりました！（当選番号は ****${inputNumber} です）`});
     } else {
       this.setState({result: `${inputNumber}はハズレです…`});
     }
