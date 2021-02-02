@@ -57,13 +57,11 @@ class App extends React.Component {
               <input
                 ref={this.inputRef}
                 id="input_number"
-                type="text"
+                type="number"
                 onChange={this.doChange}
                 autoFocus
-                maxLength="2"
-                minLength="2"
-                pattern="[0-9]{2}"
-                size="2"
+                min="0"
+                max="99"
                 required
               />
               <input type="submit" value="判定！" />
