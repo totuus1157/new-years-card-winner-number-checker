@@ -25,7 +25,7 @@ class App extends React.Component {
     if (firstPrize.substring(4) === inputNumber) {
       this.setState({result: `１等かも！？（当選番号は ${firstPrize} です）`});
     } else if (secondPrize.substring(2) === inputNumber) {
-      this.setState({result: `２等かも！？（当選番号は ${secondPrize} です）`});
+      this.setState({result: `２等かも！？（当選番号は **${secondPrize} です）`});
     } else if (thirdPrize[0] === inputNumber
                || thirdPrize[1] === inputNumber
                || thirdPrize[2] === inputNumber)
