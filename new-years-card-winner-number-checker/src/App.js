@@ -1,5 +1,5 @@
 import React from 'react';
-import Jumbotron from 'react-bootstrap/Jumbotron'
+import Jumbotron from 'react-bootstrap/Jumbotron';
 import './App.css';
 
 class App extends React.Component {
@@ -71,6 +71,9 @@ class App extends React.Component {
             <p>{this.state.result}</p>
           </section>
         </main>
+        <footer>
+          <p>Copyright (C) 2021 Totuus1157 All Rights Reserved.</p>
+        </footer>
       </div>
     );
   }
