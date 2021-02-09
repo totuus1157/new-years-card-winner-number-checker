@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/new-years-card-winner-number-checker/static/css/main.518ce94c.chunk.css",
-    "main.js": "/new-years-card-winner-number-checker/static/js/main.9f0e57ed.chunk.js",
-    "main.js.map": "/new-years-card-winner-number-checker/static/js/main.9f0e57ed.chunk.js.map",
+    "main.css": "/new-years-card-winner-number-checker/static/css/main.9184e44a.chunk.css",
+    "main.js": "/new-years-card-winner-number-checker/static/js/main.8cd9422a.chunk.js",
+    "main.js.map": "/new-years-card-winner-number-checker/static/js/main.8cd9422a.chunk.js.map",
     "runtime-main.js": "/new-years-card-winner-number-checker/static/js/runtime-main.51c2a20b.js",
     "runtime-main.js.map": "/new-years-card-winner-number-checker/static/js/runtime-main.51c2a20b.js.map",
     "static/css/2.150d169a.chunk.css": "/new-years-card-winner-number-checker/static/css/2.150d169a.chunk.css",
@@ -12,14 +12,14 @@
     "static/js/3.be4308dd.chunk.js.map": "/new-years-card-winner-number-checker/static/js/3.be4308dd.chunk.js.map",
     "index.html": "/new-years-card-winner-number-checker/index.html",
     "static/css/2.150d169a.chunk.css.map": "/new-years-card-winner-number-checker/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.518ce94c.chunk.css.map": "/new-years-card-winner-number-checker/static/css/main.518ce94c.chunk.css.map",
+    "static/css/main.9184e44a.chunk.css.map": "/new-years-card-winner-number-checker/static/css/main.9184e44a.chunk.css.map",
     "static/js/2.1eecb1b1.chunk.js.LICENSE.txt": "/new-years-card-winner-number-checker/static/js/2.1eecb1b1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.51c2a20b.js",
     "static/css/2.150d169a.chunk.css",
     "static/js/2.1eecb1b1.chunk.js",
-    "static/css/main.518ce94c.chunk.css",
-    "static/js/main.9f0e57ed.chunk.js"
+    "static/css/main.9184e44a.chunk.css",
+    "static/js/main.8cd9422a.chunk.js"
   ]
 }
