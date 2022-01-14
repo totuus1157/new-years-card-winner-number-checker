@@ -69,6 +69,9 @@ class Home extends React.Component {
             display: block;
             margin: 0 auto;
           }
+          section {
+            padding: 1rem;
+          }
         `}</style>
 
         <main className={styles.main}>
