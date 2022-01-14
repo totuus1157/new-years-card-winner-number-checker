@@ -4,6 +4,49 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 class Home extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { result: "" };
+    this.inputRef = React.createRef();
+    this.doChange = this.doChange.bind(this);
+    this.doSubmit = this.doSubmit.bind(this);
+  }
+
+  doChange(event) {
+    this.input = event.target.value;
+  }
+
+  doSubmit(event) {
+    const firstPrize = "757462";
+    const secondPrize = "6335";
+    const thirdPrize = ["60", "58", "50"];
+
+    const inputNumber = this.input;
+
+    if (firstPrize.substring(4) === inputNumber) {
+      this.setState({
+        result: `１等かも！？（当選番号は ${firstPrize} です）`,
+      });
+    } else if (secondPrize.substring(2) === inputNumber) {
+      this.setState({
+        result: `２等かも！？（当選番号は **${secondPrize} です）`,
+      });
+    } else if (
+      thirdPrize[0] === inputNumber ||
+      thirdPrize[1] === inputNumber ||
+      thirdPrize[2] === inputNumber
+    ) {
+      this.setState({
+        result: `３等が当たりました！（当選番号は ****${inputNumber} です）`,
+      });
+    } else {
+      this.setState({ result: `${inputNumber}はハズレです…` });
+    }
+
+    event.preventDefault();
+    this.inputRef.current.value = "";
+  }
+
   render() {
     return (
       <div className={styles.container}>
@@ -16,37 +59,29 @@ class Home extends React.Component {
         <main className={styles.main}>
           <h1 className={styles.title}>年賀状当選番号チェッカー</h1>
 
-          <h2>2021年版</h2>
+          <h2 className={styles.description}>2021年版</h2>
 
-          <div className={styles.grid}>
-            <a href="https://nextjs.org/docs" className={styles.card}>
-              <h2>Documentation &rarr;</h2>
-              <p>Find in-depth information about Next.js features and API.</p>
-            </a>
-
-            <a href="https://nextjs.org/learn" className={styles.card}>
-              <h2>Learn &rarr;</h2>
-              <p>Learn about Next.js in an interactive course with quizzes!</p>
-            </a>
-
-            <a
-              href="https://github.com/vercel/next.js/tree/canary/examples"
-              className={styles.card}
-            >
-              <h2>Examples &rarr;</h2>
-              <p>Discover and deploy boilerplate example Next.js projects.</p>
-            </a>
-
-            <a
-              href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              className={styles.card}
-            >
-              <h2>Deploy &rarr;</h2>
-              <p>
-                Instantly deploy your Next.js site to a public URL with Vercel.
-              </p>
-            </a>
-          </div>
+          <section className="mb-4">
+            <form onSubmit={this.doSubmit}>
+              <label htmlFor="input_number">
+                番号の下２桁を入力してください：
+              </label>
+              <input
+                ref={this.inputRef}
+                id="input_number"
+                type="number"
+                onChange={this.doChange}
+                autoFocus
+                min="0"
+                max="99"
+                required
+              />
+              <input type="submit" value="判定！" />
+            </form>
+          </section>
+          <section>
+            <p>{this.state.result}</p>
+          </section>
         </main>
 
         <footer className={styles.footer}>
