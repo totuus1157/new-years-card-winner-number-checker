@@ -56,6 +56,12 @@ class Home extends React.Component {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
+        <style jsx>{`
+          input {
+            font-size: 16px;
+          }
+        `}</style>
+
         <main className={styles.main}>
           <h1 className={styles.title}>年賀状当選番号チェッカー</h1>
 
