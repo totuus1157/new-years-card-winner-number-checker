@@ -65,6 +65,10 @@ class Home extends React.Component {
           input {
             font-size: 16px;
           }
+          input.submit {
+            display: block;
+            margin: 0 auto;
+          }
         `}</style>
 
         <main className={styles.main}>
@@ -91,7 +95,7 @@ class Home extends React.Component {
                 max="99"
                 required
               />
-              <input type="submit" value="判定！" />
+              <input className="submit" type="submit" value="判定！" />
             </form>
           </section>
           <section>
