@@ -76,7 +76,7 @@ class Home extends React.Component {
 
           <h2 className={styles.description}>{year}年版</h2>
 
-          <section className="mb-4">
+          <section>
             <form onSubmit={this.doSubmit}>
               <label htmlFor="input_number">
                 番号の下２桁を入力してください：
