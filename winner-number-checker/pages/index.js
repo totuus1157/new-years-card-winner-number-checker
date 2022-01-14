@@ -57,13 +57,20 @@ class Home extends React.Component {
         </Head>
 
         <style jsx>{`
+          span {
+            display: inline-block;
+          }
           input {
             font-size: 16px;
           }
         `}</style>
 
         <main className={styles.main}>
-          <h1 className={styles.title}>年賀状当選番号チェッカー</h1>
+          <h1 className={styles.title}>
+            <span>年賀状</span>
+            <span>当選番号</span>
+            <span>チェッカー</span>
+          </h1>
 
           <h2 className={styles.description}>2021年版</h2>
 
