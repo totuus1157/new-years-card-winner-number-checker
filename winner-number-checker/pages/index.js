@@ -3,6 +3,8 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
+const year = "2021";
+
 class Home extends React.Component {
   constructor(props) {
     super(props);
@@ -72,7 +74,7 @@ class Home extends React.Component {
             <span>チェッカー</span>
           </h1>
 
-          <h2 className={styles.description}>2021年版</h2>
+          <h2 className={styles.description}>{year}年版</h2>
 
           <section className="mb-4">
             <form onSubmit={this.doSubmit}>
@@ -98,7 +100,7 @@ class Home extends React.Component {
         </main>
 
         <footer className={styles.footer}>
-          <p>Copyright (C) 2021 Totuus1157 All Rights Reserved.</p>
+          <p>Copyright (C) {year} Totuus1157 All Rights Reserved.</p>
         </footer>
       </div>
     );
