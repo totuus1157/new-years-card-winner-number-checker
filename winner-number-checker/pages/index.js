@@ -106,7 +106,11 @@ class Home extends React.Component {
         </main>
 
         <footer className={styles.footer}>
-          <p>Copyright (C) {year} Totuus1157 All Rights Reserved.</p>
+          <p>
+            Copyright (C) {year}{" "}
+            <a href="https://twitter.com/totuus_tweet">Totuus1157</a> All Rights
+            Reserved.
+          </p>
         </footer>
       </div>
     );
