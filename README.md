@@ -1,1 +1,7 @@
-# new-years-card-winner-number-checker
+# 年賀状当選番号チェッカー
+
+## 使用技術
+- React(Next.js)
+
+## TODO
+- クラスコンポーネントから関数コンポーネントへの変更
