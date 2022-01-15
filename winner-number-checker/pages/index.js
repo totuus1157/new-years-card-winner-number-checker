@@ -85,9 +85,7 @@ class Home extends React.Component {
 
           <section>
             <form onSubmit={this.doSubmit}>
-              <label htmlFor="input_number">
-                番号の下２桁を入力してください：
-              </label>
+              <label htmlFor="input_number">番号の下２桁を入力：</label>
               <input
                 ref={this.inputRef}
                 id="input_number"
