@@ -80,7 +80,9 @@ class Home extends React.Component {
             <span>チェッカー</span>
           </h1>
 
-          <h2 className={styles.description}>{year}年版</h2>
+          <h2 className={styles.description}>
+            {year}(令和{year - 2018})年版
+          </h2>
 
           <section>
             <form onSubmit={this.doSubmit}>
