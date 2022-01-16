@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-const year = "2021";
+const year = "2022";
 
 class Home extends React.Component {
   constructor(props) {
@@ -18,15 +18,15 @@ class Home extends React.Component {
   }
 
   doSubmit(event) {
-    const firstPrize = "757462";
-    const secondPrize = "6335";
-    const thirdPrize = ["60", "58", "50"];
+    const firstPrize = "770102";
+    const secondPrize = "1208";
+    const thirdPrize = ["54", "50", "02"];
 
     const inputNumber = this.input;
 
     if (firstPrize.substring(4) === inputNumber) {
       this.setState({
-        result: `１等かも！？（当選番号は ${firstPrize} です）`,
+        result: `３等が当たりました！（当選番号は ****${inputNumber} です）\n‼️もしかしたら１等かも！？（当選番号は ${firstPrize} です）`,
       });
     } else if (secondPrize.substring(2) === inputNumber) {
       this.setState({
@@ -70,6 +70,9 @@ class Home extends React.Component {
           }
           section {
             padding: 1rem;
+          }
+          p {
+            white-space: pre-wrap;
           }
         `}</style>
 
