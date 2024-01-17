@@ -2,7 +2,7 @@ import React from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-const year = "2023";
+const year = "2024";
 
 class Home extends React.Component {
   constructor(props) {
@@ -18,9 +18,9 @@ class Home extends React.Component {
   }
 
   doSubmit(event) {
-    const firstPrize = "109681";
-    const secondPrize = "6417";
-    const thirdPrize = ["73", "42", "11"];
+    const firstPrize = "394372";
+    const secondPrize = "1879";
+    const thirdPrize = ["71", "69", "00"];
 
     const inputNumber = this.input;
 
